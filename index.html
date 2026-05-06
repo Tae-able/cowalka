@@ -414,118 +414,157 @@
         </div>
     </section>
 
-    
-<section id="features" class="py-24 md:py-32 relative bg-surface-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <!-- 1차 확인 (Large) -->
-                <div class="reveal md:col-span-8 group relative rounded-[2.5rem] bg-white/5 p-1.5 ring-1 ring-white/10 supanova-transition hover:bg-white/10 animate-in" style="--index: 3;">
-                    <div class="absolute inset-0 bg-gradient-to-br from-brand-500/5 to-transparent rounded-[2.5rem] opacity-0 group-hover:opacity-100 supanova-transition"></div>
-                    <div class="relative h-full min-h-[400px] rounded-[calc(2.5rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] p-8 md:p-12 overflow-hidden flex flex-col justify-between" style="" id="el-95690zz1t">
-                        <div class="relative z-10 max-w-md">
+
+<section id="features" class="py-24 md:py-32 relative" style="background-color: rgb(41, 41, 41); outline: rgb(139, 92, 246) solid 3px; outline-offset: -3px;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16 md:mb-24 text-center max-w-3xl mx-auto">
+                <span class="reveal inline-flex items-center gap-2 rounded-full px-3 py-1 bg-white/5 border border-white/10 text-zinc-400 text-xs font-semibold tracking-wide mb-6 animate-in" style="--index: 0;">
+                    <iconify-icon icon="solar:shield-warning-bold-duotone" class="text-brand-400"></iconify-icon>
+                    안전 프로토콜
+                </span>
+                <h2 class="reveal text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-snug break-keep-all mb-6 animate-in" style="--index: 1;">
+                    무응답 시, 단계적으로 확인합니다
+                </h2>
+                <p class="reveal text-lg text-zinc-400 break-keep-all animate-in" style="--index: 2;">
+                    단순한 대화를 넘어, 사용자의 상태를 살피고 위험을 사전에 차단하는 지능형 시스템입니다.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Column 1: 1차 확인 & 가상 전화 -->
+                <div class="reveal group relative rounded-[2.5rem] bg-white/5 p-1.5 ring-1 ring-white/10 supanova-transition hover:bg-white/10 flex flex-col animate-in" style="--index: 3;">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-brand-500/10 blur-[60px] rounded-full pointer-events-none group-hover:bg-brand-500/20 supanova-transition"></div>
+                    <div class="relative h-full min-h-[540px] rounded-[calc(2.5rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] flex flex-col overflow-hidden">
+                        <div class="p-8 pb-0 relative z-10 flex-1">
                             <span class="inline-block px-3 py-1 bg-zinc-800 text-zinc-300 text-xs font-bold rounded-full mb-4">1차 확인</span>
-                            <h3 class="text-3xl font-bold text-white mb-4 break-keep-all">응답이 없으면<br>먼저 말을 걸어요</h3>
-                            <p class="text-zinc-400 leading-relaxed break-keep-all mb-8">평소와 다른 패턴이거나 일정 시간 응답이 없다면, 
-                                <span class="text-brand-600 relative inline-block">안나</span>가 먼저 상태를 체크합니다.</p>
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 break-keep-all">응답이 없으면<br>먼저 확인해요</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed break-keep-all">일정 시간 응답이 없다면, 안나가 메세지를 보내고 가상 전화를 통해 강한 진동으로 상태를 살핍니다.</p>
                         </div>
                         
-                        <!-- Chat UI snippet -->
-                        <div class="relative z-10 flex flex-col gap-3 max-w-sm mt-auto">
-                            <div class="self-start bg-zinc-800 border border-white/10 rounded-2xl rounded-tl-sm px-5 py-4 shadow-lg flex gap-3 items-start">
-                                <div class="w-8 h-8 rounded-full bg-quokka-500/20 flex-shrink-0 flex items-center justify-center mt-0.5">
-                                    <iconify-icon icon="solar:smile-circle-bold" class="text-quokka-400"></iconify-icon>
-                                </div>
-                                <div class="space-y-2">
-                                    <p class="text-sm text-zinc-200 leading-snug break-keep-all">응답이 없네. 괜찮아?</p>
-                                    <p class="text-sm text-zinc-200 leading-snug break-keep-all">불안하면 패닉링 버튼을 누르고 있어.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- BG Image -->
-                        <div class="absolute right-0 bottom-0 w-1/2 h-full bg-gradient-to-l from-transparent to-zinc-900 z-0" style="" id="el-hwrjq0tdw"></div>
-                    </div>
-                </div>
-
-                <!-- 2차 패닉링 (Small) -->
-                <div class="reveal md:col-span-4 group relative rounded-[2.5rem] bg-white/5 p-1.5 ring-1 ring-white/10 supanova-transition hover:bg-white/10 animate-in" style="--index: 4;" id="el-udq43t8ty">
-                    <div class="relative h-full min-h-[400px] rounded-[calc(2.5rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] p-8 flex flex-col" style="" id="el-i0bruiqtj">
-                        <span class="inline-block px-3 py-1 bg-brand-500/20 text-brand-400 text-xs font-bold rounded-full mb-4 w-max">2차 패닉링</span>
-                        <h3 class="text-2xl font-bold text-white mb-3 break-keep-all">터치 앤 홀드.<br>언제든 바로 열 수 있어요.</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed break-keep-all mb-8">손을 떼는 순간 바로 작동합니다. 홈 화면 고정, 잠금 화면 위젯, 앱 내 플로팅 버튼 지원.</p>
-                        
-                        <div class="mt-auto flex justify-center pb-4 relative">
-                            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                <div class="w-24 h-24 rounded-full border border-red-500/50 animate-pulse-ring"></div>
-                            </div>
-                            <div class="w-20 h-20 rounded-full bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center shadow-[0_0_30px_rgba(239,68,68,0.4)] relative z-10 cursor-pointer supanova-transition hover:scale-105">
-                                <iconify-icon icon="solar:fingerprint-bold" class="text-white text-4xl"></iconify-icon>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3차 가상 전화 & 데이터 전송 (Full Width) -->
-                <div class="reveal md:col-span-12 group relative rounded-[2.5rem] bg-white/5 p-1.5 ring-1 ring-white/10 supanova-transition hover:bg-white/10 mt-2 animate-in" style="--index: 5;">
-                    <div class="relative h-full rounded-[calc(2.5rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] p-8 md:p-12 overflow-hidden flex flex-col md:flex-row items-center gap-12">
-                        <div class="md:w-1/2 relative z-10">
-                            <span class="inline-block px-3 py-1 bg-red-500/20 text-red-400 text-xs font-bold rounded-full mb-4 w-max">3차 가상 전화 &amp; 자동 신고</span>
-                            <h3 class="text-3xl md:text-4xl font-bold text-white mb-6 break-keep-all leading-snug">패닉링조차 누르지<br>못한 상황이라면</h3>
-                            <p class="text-zinc-400 leading-relaxed break-keep-all text-lg mb-8">
-                                전화 화면으로 전환되어 강한 진동과 <span class="text-brand-600 relative inline-block">안나</span>의 음성이 재생됩니다. 
-                                오작동을 줄이고 사용자의 상태를 다시 확인한 후, 시공간의 제약 없이 빠르게 신고를 진행합니다.
-                            </p>
-                            
-                            <div class="bg-zinc-950/50 rounded-2xl p-5 border border-white/5">
-                                <h4 class="text-sm font-semibold text-white mb-3 flex items-center gap-2">
-                                    <iconify-icon icon="solar:shield-warning-bold" class="text-brand-400"></iconify-icon>
-                                    보호자에게 즉시 전달되는 정보
-                                </h4>
-                                <ul class="grid grid-cols-2 gap-3">
-                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
-                                        <div class="w-1.5 h-1.5 rounded-full bg-brand-500"></div> 현재 위치 (GPS)
-                                    </li>
-                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
-                                        <div class="w-1.5 h-1.5 rounded-full bg-brand-500"></div> 현장 근처 경찰서 연결
-                                    </li>
-                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
-                                        <div class="w-1.5 h-1.5 rounded-full bg-brand-500"></div> 주변 음성 10초
-                                    </li>
-                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
-                                        <div class="w-1.5 h-1.5 rounded-full bg-brand-500"></div> 마지막 응답 시각
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="md:w-1/2 w-full flex justify-center">
-                            <!-- Incoming Call Mockup -->
-                            <div class="w-64 h-[480px] bg-zinc-950 rounded-[2.5rem] border-4 border-zinc-800 relative overflow-hidden shadow-2xl flex flex-col items-center py-12 justify-between">
-                                <!-- Status bar faux -->
-                                <div class="absolute top-0 w-full h-8 flex items-center justify-center">
-                                    <div class="w-20 h-4 bg-black rounded-b-xl"></div>
-                                </div>
+                        <div class="relative w-full flex justify-center pt-8 px-6 mt-auto">
+                            <!-- Phone Mockup 1 -->
+                            <div class="w-full max-w-[260px] h-[340px] bg-zinc-950 rounded-t-[2.5rem] border-x-4 border-t-4 border-zinc-800 relative overflow-hidden shadow-2xl translate-y-2 group-hover:translate-y-0 supanova-transition flex flex-col">
+                                <div class="absolute inset-0 bg-zinc-900 z-0"></div>
+                                <div class="absolute top-0 w-full h-6 flex justify-center z-10"><div class="w-16 h-3 bg-black rounded-b-lg"></div></div>
                                 
-                                <div class="text-center mt-8">
-                                    <h4 class="text-white text-2xl font-semibold tracking-wide">안나</h4>
-                                    <p class="text-zinc-500 mt-1">상태 확인 전화 중...</p>
+                                <!-- Top Notification Banner -->
+                                <div class="absolute top-10 left-3 right-3 bg-zinc-800/90 backdrop-blur-md rounded-2xl p-3 shadow-lg border border-white/5 z-20 flex gap-3 items-center">
+                                    <div class="w-8 h-8 rounded-full bg-quokka-500/20 flex items-center justify-center shrink-0">
+                                        <iconify-icon icon="solar:smile-circle-bold" class="text-quokka-400"></iconify-icon>
+                                    </div>
+                                    <p class="text-[11px] text-zinc-200 leading-tight">응답이 없네. 괜찮아?<br><span class="text-zinc-400 mt-0.5 inline-block">안나 • 방금 전</span></p>
                                 </div>
 
-                                <div class="relative">
-                                    <!-- Ring animation -->
-                                    <div class="absolute inset-0 border border-white/20 rounded-full animate-pulse-ring" style="animation-delay: 0s;"></div>
-                                    <div class="absolute inset-0 border border-white/20 rounded-full animate-pulse-ring" style="animation-delay: 0.5s;"></div>
-                                    <div class="w-28 h-28 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center relative z-10 shadow-lg">
-                                        <iconify-icon icon="solar:smile-circle-bold-duotone" class="text-6xl text-quokka-400"></iconify-icon>
+                                <!-- Incoming Call UI -->
+                                <div class="absolute inset-0 z-10 flex flex-col items-center justify-center pt-24 pb-8">
+                                    <div class="text-center mb-6">
+                                        <h4 class="text-white text-xl font-semibold tracking-wide">안나</h4>
+                                        <p class="text-zinc-500 text-xs mt-1">상태 확인 전화 중...</p>
+                                    </div>
+                                    <div class="relative w-20 h-20 mb-8">
+                                        <div class="absolute inset-0 border border-white/20 rounded-full animate-pulse-ring" style="animation-duration: 2s;"></div>
+                                        <div class="w-20 h-20 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center relative z-10 shadow-lg">
+                                            <iconify-icon icon="solar:smile-circle-bold-duotone" class="text-4xl text-quokka-400"></iconify-icon>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-6 mt-auto">
+                                        <div class="w-12 h-12 rounded-full bg-red-500/20 text-red-500 flex items-center justify-center text-xl">
+                                            <iconify-icon icon="solar:phone-calling-rounded-bold" class="rotate-[135deg]"></iconify-icon>
+                                        </div>
+                                        <div class="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center text-xl shadow-[0_0_15px_rgba(34,197,94,0.4)]">
+                                            <iconify-icon icon="solar:phone-calling-rounded-bold"></iconify-icon>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                <div class="flex gap-8 w-full px-8 justify-center mt-8">
-                                    <div class="w-16 h-16 rounded-full bg-red-500/20 text-red-500 flex items-center justify-center text-2xl">
-                                        <iconify-icon icon="solar:phone-calling-rounded-bold" class="rotate-[135deg]"></iconify-icon>
+                <!-- Column 2: 2차 패닉링 -->
+                <div class="reveal group relative rounded-[2.5rem] bg-white/5 p-1.5 ring-1 ring-white/10 supanova-transition hover:bg-white/10 flex flex-col animate-in" style="--index: 4;">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-red-500/10 blur-[60px] rounded-full pointer-events-none group-hover:bg-red-500/20 supanova-transition"></div>
+                    <div class="relative h-full min-h-[540px] rounded-[calc(2.5rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] flex flex-col overflow-hidden">
+                        <div class="p-8 pb-0 relative z-10 flex-1">
+                            <span class="inline-block px-3 py-1 bg-red-500/10 text-red-400 text-xs font-bold rounded-full mb-4">2차 패닉링</span>
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 break-keep-all">터치 앤 홀드.<br>언제든 바로.</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed break-keep-all">손을 떼는 순간 즉시 작동합니다.</p>
+                        </div>
+                        
+                        <div class="relative w-full flex justify-center pt-8 px-6 mt-auto">
+                            <!-- Phone Mockup 2 -->
+                            <div class="w-full max-w-[260px] h-[340px] bg-zinc-950 rounded-t-[2.5rem] border-x-4 border-t-4 border-zinc-800 relative overflow-hidden shadow-2xl translate-y-2 group-hover:translate-y-0 supanova-transition flex flex-col">
+                                <div class="absolute inset-0 bg-zinc-950 z-0">
+                                    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-500/10 via-zinc-950 to-zinc-950"></div>
+                                </div>
+                                <div class="absolute top-0 w-full h-6 flex justify-center z-10"><div class="w-16 h-3 bg-black rounded-b-lg"></div></div>
+                                
+                                <div class="absolute inset-0 z-10 flex flex-col items-center justify-center pt-8 pb-12">
+                                    <p class="text-zinc-500 text-xs mb-10 tracking-wide font-medium">위급 시 손을 떼세요</p>
+                                    <div class="relative flex justify-center items-center">
+                                        <div class="absolute w-36 h-36 rounded-full border border-red-500/20 animate-pulse-ring" style="animation-duration: 2.5s;"></div>
+                                        <div class="absolute w-28 h-28 rounded-full border border-red-500/40 animate-pulse-ring" style="animation-duration: 2.5s; animation-delay: 0.5s;"></div>
+                                        <div class="w-20 h-20 rounded-full bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center shadow-[0_0_30px_rgba(239,68,68,0.4)] relative z-10 cursor-pointer supanova-transition hover:scale-105 active:scale-95">
+                                            <iconify-icon icon="solar:fingerprint-bold" class="text-white text-4xl"></iconify-icon>
+                                        </div>
                                     </div>
-                                    <div class="w-16 h-16 rounded-full bg-green-500 text-white flex items-center justify-center text-2xl shadow-[0_0_20px_rgba(34,197,94,0.4)]">
-                                        <iconify-icon icon="solar:phone-calling-rounded-bold"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: 3차 자동 신고 -->
+                <div class="reveal group relative rounded-[2.5rem] bg-white/5 p-1.5 ring-1 ring-white/10 supanova-transition hover:bg-white/10 flex flex-col animate-in" style="--index: 5;">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-brand-400/10 blur-[60px] rounded-full pointer-events-none group-hover:bg-brand-400/20 supanova-transition"></div>
+                    <div class="relative h-full min-h-[540px] rounded-[calc(2.5rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] flex flex-col overflow-hidden">
+                        <div class="p-8 pb-0 relative z-10 flex-1">
+                            <span class="inline-block px-3 py-1 bg-brand-500/10 text-brand-400 text-xs font-bold rounded-full mb-4">3차 자동 신고</span>
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 break-keep-all">지체 없이<br>보호자에게 전달</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed break-keep-all">패닉링을 작동하거나 모든 응답이 실패할 경우, 실시간 위치와 주변 녹음 기록이 보호자에게 즉시 전송됩니다.</p>
+                        </div>
+                        
+                        <div class="relative w-full flex justify-center pt-8 px-6 mt-auto">
+                            <!-- Phone Mockup 3 -->
+                            <div class="w-full max-w-[260px] h-[340px] bg-zinc-950 rounded-t-[2.5rem] border-x-4 border-t-4 border-zinc-800 relative overflow-hidden shadow-2xl translate-y-2 group-hover:translate-y-0 supanova-transition flex flex-col">
+                                <div class="absolute inset-0 bg-zinc-900 z-0">
+                                    <img src="https://images.unsplash.com/photo-1519500099198-d81119b931e2?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Map" class="w-full h-full object-cover opacity-30 mix-blend-luminosity grayscale">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-transparent"></div>
+                                </div>
+                                <div class="absolute top-0 w-full h-6 flex justify-center z-10"><div class="w-16 h-3 bg-black rounded-b-lg"></div></div>
+                                
+                                <div class="absolute inset-0 z-10 flex flex-col justify-end p-4 pb-8">
+                                    <!-- Alert Banner -->
+                                    <div class="bg-red-500 rounded-xl p-3 flex items-center gap-3 mb-4 shadow-[0_0_20px_rgba(239,68,68,0.3)] mx-1">
+                                        <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+                                            <iconify-icon icon="solar:danger-triangle-bold" class="text-white text-lg"></iconify-icon>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-white text-[11px] font-bold leading-tight">자동 신고 완료</p>
+                                            <p class="text-red-100 text-[10px] mt-0.5">보호자에게 데이터 전송됨</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Data List -->
+                                    <div class="bg-zinc-800/90 backdrop-blur-md rounded-xl p-4 border border-white/10 shadow-lg space-y-4 mx-1">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-8 h-8 rounded-full bg-brand-500/20 flex items-center justify-center shrink-0">
+                                                <iconify-icon icon="solar:map-point-bold" class="text-brand-400 text-sm"></iconify-icon>
+                                            </div>
+                                            <div>
+                                                <p class="text-zinc-400 text-[10px] mb-0.5">실시간 위치 정보</p>
+                                                <p class="text-zinc-200 text-xs font-medium tracking-tight">서울시 마포구 연남동</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-8 h-8 rounded-full bg-brand-500/20 flex items-center justify-center shrink-0">
+                                                <iconify-icon icon="solar:mic-bold" class="text-brand-400 text-sm"></iconify-icon>
+                                            </div>
+                                            <div>
+                                                <p class="text-zinc-400 text-[10px] mb-0.5">현장 주변 음성</p>
+                                                <p class="text-zinc-200 text-xs font-medium tracking-tight">10초 녹음 파일 첨부</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -535,8 +574,7 @@
             </div>
         </div>
     </section>
-
-
+   
     
     <!-- Mid CTA Banner -->
     <section class="py-24 relative overflow-hidden bg-surface-100 border-y border-zinc-200">
