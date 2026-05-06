@@ -116,6 +116,7 @@
         ::-webkit-scrollbar-track { background: #FDFBF7; }
         ::-webkit-scrollbar-thumb { background: #D4D4D8; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #A1A1AA; }
+        
     </style>
 </head>
 <body class="bg-surface-50 text-zinc-600 font-sans selection:bg-brand-100 selection:text-brand-900 overflow-x-hidden">
@@ -415,13 +416,9 @@
     </section>
 
 
-<section id="features" class="py-24 md:py-32 relative" style="background-color: rgb(41, 41, 41); outline: rgb(139, 92, 246) solid 3px; outline-offset: -3px;">
+<section id="features" class="py-24 md:py-32 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-16 md:mb-24 text-center max-w-3xl mx-auto">
-                <span class="reveal inline-flex items-center gap-2 rounded-full px-3 py-1 bg-white/5 border border-white/10 text-zinc-400 text-xs font-semibold tracking-wide mb-6 animate-in" style="--index: 0;">
-                    <iconify-icon icon="solar:shield-warning-bold-duotone" class="text-brand-400"></iconify-icon>
-                    안전 프로토콜
-                </span>
                 <h2 class="reveal text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-snug break-keep-all mb-6 animate-in" style="--index: 1;">
                     무응답 시, 단계적으로 확인합니다
                 </h2>
@@ -994,6 +991,63 @@
         </div>
     </section>
 
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Slider main container -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <!-- 리뷰 슬라이드 6개 -->
+    <div class="swiper-slide">
+      <div class="review-card">
+        <p>"디자인이 너무 깔끔해요!"</p>
+        <span>- 사용자 1</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="review-card">
+        <p>"기능이 직관적이라 사용하기 편합니다."</p>
+        <span>- 사용자 2</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="review-card">
+        <p>"빠른 속도에 놀랐습니다."</p>
+        <span>- 사용자 3</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="review-card">
+        <p>"고객 지원이 정말 친절해요."</p>
+        <span>- 사용자 4</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="review-card">
+        <p>"가성비 최고의 서비스입니다."</p>
+        <span>- 사용자 5</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="review-card">
+        <p>"친구들에게도 추천하고 싶어요."</p>
+        <span>- 사용자 6</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 페이지네이션 (점) -->
+  <div class="swiper-pagination"></div>
+  
+  <!-- 네비게이션 버튼 (화살표) -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
     <!-- Footer -->
     <footer class="border-t border-zinc-200 bg-white py-12 md:py-16 text-zinc-500 text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1055,6 +1109,44 @@
                 observer.observe(el);
             });
         });
+    </script>
+
+
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+  // 옵션 설정
+  slidesPerView: 1, // 기본적으로 모바일에서는 1개
+  spaceBetween: 20, // 슬라이드 사이 간격
+  loop: true,       // 무한 반복
+  
+  // 자동 재생 (필요 없으면 삭제)
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  // 하단 점 표시
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // 좌우 화살표
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // 반응형 설정 (화면 크기에 따라 보여주는 개수 조절)
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3, // 데스크탑에서는 3개씩 노출
+    }
+  }
+});
     </script>
 </body>
 </html>
