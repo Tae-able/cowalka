@@ -493,8 +493,6 @@
                 맞습니다. 매일 수백 번 켜는 카톡은 우리에게 가장 익숙하고 빠른 대화 채널입니다. 하지만…
             </p>
         </div>
-
-
         
         <!-- 카카오톡 VS 코워카 -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
@@ -511,7 +509,6 @@
                 </div>
             </div>
         </div>
-
             
         <!-- 비교 표 컨테이너 -->
         <div class="overflow-x-auto rounded-[2rem] shadow-2xl border border-zinc-200/50 bg-white/50 backdrop-blur-sm">
@@ -522,11 +519,15 @@
                         <td class="p-8 align-top">
                             <div class="flex items-center gap-2 mb-3 text-zinc-500 font-bold">
                                 <iconify-icon icon="solar:chat-line-linear"></iconify-icon>
-                                <span>일상 대</span>
+                                <span> 일상 대화 </span>
                             </div>
-                            <p class="text-zinc-500 text-sm leading-relaxed">
-                                일상적인 소통과 안부를 묻는 용도<br>
-                                관계 유지를 위한 기능에 집중되어 있어, 내가 먼저 신호를 보내기 전까지는 나의 안전에 무관심합니다.
+                            <p class="text-zinc-500 text-sm italic mb-3">
+                                "나 지금 퇴근 중이야."<br> 
+                                "방금 집에 잘 도착했어."
+                            </p>
+                            <p class="text-zinc-500 text-[13px] leading-relaxed">
+                                일상적인 소통과 안부, 관계 유지를 위한 기능에 집중되어 있어<br>
+                                내가 먼저 신호를 보내기 전까지는 나의 안전에 무관심합니다.
                             </p>
                         </td>
                         <td class="p-8 text-center align-middle font-bold text-blue-500 bg-zinc-50/30">일상</td>
@@ -535,16 +536,20 @@
                                 <iconify-icon icon="solar:chat-round-check-bold"></iconify-icon>
                                 <span>안전 습관 형성</span>
                             </div>
-                            <p class="text-zinc-800 text-sm font-semibold mb-2">"무사히 집에 도착했어."</p>
+                            <p class="text-zinc-800 text-sm font-semibold mb-2">
+                                "오후 4시야. 슬슬 퇴근 준비하자! 휴대폰 배터리 확인해!"<br>
+                                "퇴근 시간이야~ 오늘은 8시 퇴근이네? 오늘도 나랑 안전 귀가하자!"
+                            </p>
                             <p class="text-brand-700 text-sm leading-relaxed">
-                                매일의 귀갓길을 기록하며 나만의 안전 지도를 만들어갑니다.
+                                매일 퇴근 2시간 전 사용자에게 먼저 대화를 걸며, 안전 습관을 챙기고 상태와 안부를 물어요.<br>
+                                퇴근 길에는 안심 경로와 정보를 제공하며 안전 귀가를 돕습니다.
                             </p>
                         </td>
                     </tr>
 
                     <!-- 불안 섹션 -->
                     <tr class="group">
-                        <td class="p-8 align-top opacity-50 transition-opacity group-hover:opacity-100">
+                        <td class="p-8 align-top">
                             <div class="flex items-center gap-2 mb-3 text-zinc-500 font-bold">
                                 <iconify-icon icon="solar:map-point-linear"></iconify-icon>
                                 <span>불안: 주저하는 순간</span>
@@ -557,7 +562,7 @@
                                 연결되어 있어도 불안은 여전히 혼자 견뎌내고 있습니다.
                             </p>
                         </td>
-                        <td class="p-8 text-center align-middle font-bold text-purple-500 bg-zinc-50/30">불안</td>
+                        <td class="p-8 text-center align-middle font-bold bg-zinc-50/30">불안</td>
                         <td class="p-8 align-top bg-brand-50/20 border-y-2 border-brand-200">
                             <div class="flex items-center gap-2 mb-3 text-brand-600 font-bold">
                                 <iconify-icon icon="solar:routing-2-bold"></iconify-icon>
@@ -567,7 +572,7 @@
                                 "오늘 따라 골목이 너무 어둡네."<br>
                                 "누가 따라오는 것 같아."
                             </p>
-                            <p class="text-brand-700 text-sm leading-relaxed font-medium">
+                            <p class="text-zinc-900 text-sm leading-relaxed font-medium">
                                 짧은 한마디면 충분합니다. 코워카는 즉시 반응합니다.
                             </p>
                         </td>
@@ -575,7 +580,7 @@
 
                     <!-- 위험 섹션 -->
                     <tr class="group">
-                        <td class="p-8 align-top opacity-50 transition-opacity group-hover:opacity-100">
+                        <td class="p-8 align-top">
                             <div class="flex items-center gap-2 mb-3 text-zinc-500 font-bold">
                                 <iconify-icon icon="solar:shield-warning-linear"></iconify-icon>
                                 <span>위험: 사후 수습</span>
@@ -585,16 +590,16 @@
                             </p>
                             <p class="text-zinc-400 text-xs">혼자서는 대응할 방법이 없는 구조입니다.</p>
                         </td>
-                        <td class="p-8 text-center align-middle font-bold text-red-500 bg-zinc-50/30">위험</td>
-                        <td class="p-8 align-top bg-brand-600 text-white rounded-br-[2rem]">
-                            <div class="flex items-center gap-2 mb-3 text-brand-100 font-bold">
+                        <td class="p-8 text-center align-middle font-bold bg-zinc-50/30">위험</td>
+                        <td class="p-8 align-top text-white rounded-br-[2rem]">
+                            <div class="flex items-center gap-2 mb-3 text-brand-600 font-bold">
                                 <iconify-icon icon="solar:shield-check-bold"></iconify-icon>
                                 <span>즉시 대응 시스템</span>
                             </div>
-                            <p class="text-brand-50 font-bold text-sm mb-3">
+                            <p class="text-zinc-900 font-bold text-sm mb-3">
                                 원 터치 위기 버튼 & 자동 증거 리포트
                             </p>
-                            <p class="text-white/90 text-xs leading-relaxed">
+                            <p class="text-zinc-900 text-xs leading-relaxed">
                                 보호자는 당신의 상황을 5분 안에 파악하고 즉시 대응할 수 있습니다.
                             </p>
                         </td>
