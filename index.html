@@ -824,87 +824,32 @@
                             <div class="h-10 flex items-center justify-center overflow-hidden">
                                             <img src="cowalka_face.png" alt="코워카_얼굴" class="w-full h-full object-cover">
                             </div>
-                            <div class="flex items-center gap-3 px-4 py-3 bg-red-50 text-red-600 rounded-2xl rounded-tl-none shadow-sm border border-red-100">
-                                <div class="w-8 h-8 rounded-xl bg-red-500/10 flex items-center justify-center shrink-0">
-                                    <iconify-icon icon="solar:siren-rounded-bold" class="text-red-500 text-lg"></iconify-icon>
+
+                            <div class="self-start max-w-[85%] flex flex-col gap-2">
+                                <div class="flex bg-white px-4 py-3 bg-red-50 text-red-600 rounded-2xl shadow-sm border border-red-100 items-center">
+                                    <div class="relative w-16 h-16 flex items-center justify-center shrink-0">
+                                        <div class="absolute w-full h-full rounded-full border border-red-500/20 animate-pulse-ring" style="animation-duration: 2.5s;"></div>
+                                        <div class="absolute w-[80%] h-[80%] rounded-full border border-red-500/40 animate-pulse-ring" style="animation-duration: 2.5s; animation-delay: 0.5s;"></div>
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center shadow-[0_0_15px_rgba(239,68,68,0.4)] relative z-10">
+                                            <iconify-icon icon="solar:fingerprint-bold" class="text-white text-xl"></iconify-icon>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col px-3">
+                                        <p class="text-xs font-bold text-red-400 uppercase tracking-tight">Emergency</p>
+                                        <p class="text-[15px] font-extrabold tracking-tight">원 터치 위기 버튼</p>
+                                        <p class="text-[14px] text-red-500/70 font-medium">꼭 눌러서 보호 시작</p>
+                                    </div>
                                 </div>
-                                <span class="text-sm font-bold leading-tight">
-                                    원 터치 위기 버튼 & 자동 증거 리포트
-                                </span>
-                            </div>
-
-
-<!-- 자동 증거 리포트 섹션 -->
-<div class="self-start max-w-[85%] flex flex-col gap-2">
-    
-    <!-- 패닉링 버튼 (제시해준 코드 활용) -->
-    <div class="flex bg-white px-4 py-3 bg-red-50 text-red-600 rounded-2xl shadow-sm border border-red-100 items-center">
-        <div class="relative w-16 h-16 flex items-center justify-center shrink-0">
-            <div class="absolute w-full h-full rounded-full border border-red-500/20 animate-pulse-ring" style="animation-duration: 2.5s;"></div>
-            <div class="absolute w-[80%] h-[80%] rounded-full border border-red-500/40 animate-pulse-ring" style="animation-duration: 2.5s; animation-delay: 0.5s;"></div>
-            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center shadow-[0_0_15px_rgba(239,68,68,0.4)] relative z-10">
-                <iconify-icon icon="solar:fingerprint-bold" class="text-white text-xl"></iconify-icon>
-            </div>
-        </div>
-        <div class="flex flex-col px-3">
-            <p class="text-xs font-bold text-red-400 uppercase tracking-tight">Emergency</p>
-            <p class="text-[15px] font-extrabold tracking-tight">원 터치 위기 버튼</p>
-            <p class="text-[14px] text-red-500/70 font-medium">꼭 눌러서 보호 시작</p>
-        </div>
-    </div>
-
-    <!-- 증거 리포트 상태 카드 -->
-    <div class="bg-zinc-900 rounded-2xl p-4 shadow-xl border border-zinc-800">
-        <div class="flex items-center justify-between mb-3">
-            <div class="flex items-center gap-2">
-                <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-                </span>
-                <span class="text-[12px] font-bold text-white uppercase tracking-widest">Evidence Recording</span>
-            </div>
-            <span class="text-[10px] text-zinc-500 font-mono">00:04:12</span>
-        </div>
-
-        <!-- 리포트 항목 (이모티콘 활용) -->
-        <div class="space-y-2.5">
-            <div class="flex items-center gap-3 bg-zinc-800/50 p-2.5 rounded-xl border border-white/5">
-                <span class="text-lg">🎙️</span>
-                <div class="flex-1">
-                    <p class="text-[11px] text-zinc-400 font-bold">음성 현장 녹음</p>
-                    <div class="flex gap-0.5 mt-1">
-                        <div class="w-1 h-3 bg-red-500 animate-pulse"></div>
-                        <div class="w-1 h-5 bg-red-500 animate-pulse" style="animation-delay: 0.2s"></div>
-                        <div class="w-1 h-2 bg-red-500 animate-pulse" style="animation-delay: 0.4s"></div>
-                        <div class="w-1 h-4 bg-red-500 animate-pulse" style="animation-delay: 0.1s"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-3 bg-zinc-800/50 p-2.5 rounded-xl border border-white/5">
-                <span class="text-lg">📍</span>
-                <div>
-                    <p class="text-[11px] text-zinc-400 font-bold">실시간 위치 전송</p>
-                    <p class="text-[10px] text-red-400 font-medium">보호자에게 경로 공유 중...</p>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-3 bg-zinc-800/50 p-2.5 rounded-xl border border-white/5">
-                <span class="text-lg">📸</span>
-                <div>
-                    <p class="text-[11px] text-zinc-400 font-bold">자동 사진 캡처</p>
-                    <p class="text-[10px] text-zinc-500 font-medium">전/후면 카메라 데이터 백업</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-                            
+                                <div class="flex items-center gap-3 px-4 py-3 bg-red-50 text-red-600 rounded-2xl rounded-tl-none shadow-sm border border-red-100">
+                                    <div class="w-8 h-8 rounded-xl bg-red-500/10 flex items-center justify-center shrink-0"> 
+                                        <span class="class="text-red-500 text-lg"> 📍 </span>
+                                    </div>
+                                    <span class="text-[15px] font-bold leading-tight">
+                                        자동 증거 리포트
+                                    </span>
+                                </div>
                         </div>
+                            
                         <p class="text-zinc-800 text-sm font-bold leading-relaxed">
                             <span class="text-red-600 relative inline-block">원 터치 위기 버튼</span> 하나로
                             <span class="text-red-600 relative inline-block">자동 증거 리포트</span>를<br>
