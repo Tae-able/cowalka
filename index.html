@@ -190,7 +190,7 @@
                 <div class="lg:col-span-6 relative reveal">
                     
                     <!-- 코워카 빼꼼 -->
-                    <div class="absolute -right-12 top-40 z-20 w-32 md:w-48 lg:w-64 animate-float lg:w-100 border-2 border-brand-500 rounded-3xl p-2">
+                    <div class="absolute -right-12 top-40 z-20 w-26 md:w-32 lg:w-48 animate-float lg:w-100 border-2 border-brand-500 rounded-3xl p-2">
                         <img src="quokka_image_path.png" alt="cowalka" class="w-full h-auto object-contain" />
                     </div>
                     
@@ -269,43 +269,6 @@
                                             이제 퇴근할 시간이네. 출발해볼까?</p>
                                     </div>
                                     <div class="self-start max-w-[85%] bg-white border border-zinc-100 rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm">
-
-                                    <!-- 지도 컨테이너: 채팅창 너비와 동일하게 설정 -->
-                                    <div class="relative w-full  rounded-2xl overflow-hidden mb-3 border border-zinc-200 shadow-inner">
-                                        <!-- 지도 위 오버레이 (경로 선 표현) -->
-                                        <svg class="absolute inset-0 w-full h-full pointer-events-none" preserveAspectRatio="none">
-                                            <path d="M 40 160 Q 120 140 180 80 T 320 40" fill="none" stroke="#059669" stroke-width="4" stroke-dasharray="8" stroke-linecap="round" class="animate-[dash_2s_linear_infinite]" />
-                                        </svg>
-                                    
-                                        <!-- 현재 위치 핀 (출발지) -->
-                                        <div class="absolute bottom-10 left-[10%]">
-                                            <div class="relative">
-                                                <div class="absolute -inset-1 bg-zinc-400/30 rounded-full animate-ping"></div>
-                                                <div class="w-3 h-3 bg-zinc-600 rounded-full border-2 border-white shadow-sm"></div>
-                                            </div>
-                                        </div>
-                                        <!-- 목적지 핀 (우리집) -->
-                                        <div class="absolute top-10 right-[15%] flex flex-col items-center">
-                                            <div class="bg-brand-600 text-white text-[10px] px-2 py-0.5 rounded-full mb-1 font-bold shadow-sm">우리집</div>
-                                            <iconify-icon icon="solar:map-point-bold" class="text-brand-600 text-2xl"></iconify-icon>
-                                        </div>
-                                        <!-- 하단 경로 정보 배지 -->
-                                        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-white/90 backdrop-blur-sm rounded-full border border-zinc-200 shadow-sm flex items-center gap-2">
-                                            <span class="text-[11px] font-bold text-zinc-900">도보 8분</span>
-                                            <span class="w-[1px] h-2 bg-zinc-300"></span>
-                                            <span class="text-[11px] text-zinc-500 font-medium">안심 경로(큰길 위주)</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <style>
-                                        /* 경로 선이 움직이는 애니메이션 효과 */
-                                        @keyframes dash {
-                                            to { stroke-dashoffset: -16; }
-                                        }
-                                    </style>
-
-
-                                        
                                         <div class="flex items-center gap-2 mb-2">
                                             <div class="w-6 h-6 rounded-full bg-green-50 border border-green-100 flex items-center justify-center">
                                                 <iconify-icon icon="solar:routing-2-bold" class="text-xs text-green-500"></iconify-icon>
