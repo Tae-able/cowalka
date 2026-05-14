@@ -916,6 +916,40 @@
             </p>
         </div>
 
+
+
+
+<!-- 전체 컨테이너: 버튼과 말풍선을 가로로 배치 -->
+<div class="flex items-end justify-end gap-2 mb-6">
+  
+  <!-- 재전송/삭제 버튼 그룹 (왼쪽) -->
+  <div class="flex items-center gap-1 bg-white border border-zinc-200 rounded-full px-2 py-1 shadow-sm mb-1">
+    <!-- 재전송 아이콘 (회전 화살표) -->
+    <button class="text-zinc-600 hover:text-zinc-900">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path><polyline points="21 3 21 8 16 8"></polyline></svg>
+    </button>
+    <!-- 구분선 -->
+    <div class="w-[1px] h-3 bg-zinc-200 mx-1"></div>
+    <!-- 삭제 아이콘 (X) -->
+    <button class="text-red-500 hover:text-red-700">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+  </div>
+
+  <!-- 말풍선 그룹 (오른쪽) -->
+  <div class="flex flex-col gap-2 items-end">
+    <span class="px-4 py-2 bg-brand-700/10 text-zinc-900 rounded-2xl rounded-tr-none text-sm shadow-md border border-brand-700/40">
+      오늘따라 골목이 너무 어두워.
+    </span>
+    <span class="px-4 py-2 bg-brand-700/10 text-zinc-900 rounded-2xl rounded-tr-none text-sm shadow-md border border-brand-700/40">
+      누가 따라오는 것 같아.
+    </span>
+  </div>
+
+</div>
+
+
+        
         <!-- 비교 컨테이너 -->
         <div class="w-full md:w-[90%] lg:w-[70%] mx-auto bg-white/70 backdrop-blur-md rounded-[2.5rem] shadow-2xl border border-zinc-200/50 overflow-hidden">
             
