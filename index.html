@@ -332,12 +332,12 @@
                                             <p class="text-[14px] text-zinc-700 leading-snug break-keep-all">응, 고마워</p>
                                         </div>
 
-<!-- 선이 포함된 시간 구분선 -->
-<div class="relative flex py-2 items-center">
-    <div class="flex-grow border-t border-zinc-300"></div>
-        <span class=" text-zinc-500 text-[11px] px-3 py-1 rounded-full font-medium tracking-wider">오후 8:00</span>
-    <div class="flex-grow border-t border-zinc-300"></div>
-</div>
+                                        <!-- 선이 포함된 시간 구분선 -->
+                                        <div class="relative flex py-2 items-center">
+                                            <div class="flex-grow border-t border-zinc-300"></div>
+                                                <span class=" text-zinc-500 text-[11px] px-3 py-1 rounded-full font-medium tracking-wider">오후 8:00</span>
+                                            <div class="flex-grow border-t border-zinc-300"></div>
+                                        </div>
 
                                     
                                     <!-- 퇴근 시간 대 -->
@@ -374,7 +374,7 @@
                                         </div>
                                     
                                         <!-- 텍스트 설명 영역 -->
-                                        <div class="flex flex-col gap-0.5 px-3">
+                                        <div class="flex flex-col px-3">
                                             <p class="text-xs font-bold text-red-400 uppercase tracking-tight">Emergency</p>
                                             <p class="text-[15px] font-extrabold tracking-tight"> 패닉링 </p>
                                             <p class="text-[11px] text-red-500/70 font-medium"> 꼭 눌러서 보호 시작 </p>
@@ -391,6 +391,86 @@
                                             animation: pulse-ring cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
                                         }
                                     </style>
+
+                                    <!-- 선이 포함된 시간 구분선 -->
+                                    <div class="relative flex py-2 items-center">
+                                        <div class="flex-grow border-t border-zinc-300"></div>
+                                            <span class="text-zinc-500 text-[11px] px-3 py-1 rounded-full font-medium tracking-wider">오후 9:20</span>
+                                        <div class="flex-grow border-t border-zinc-300"></div>
+                                    </div>
+                                    
+                            <div class="flex flex-col gap-1">
+                                    <div class="self-start max-w-[85%] bg-white border border-zinc-100 rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm mb-0.5">
+                                        <p class="text-[14px] text-zinc-700 leading-snug break-keep-all">
+                                            답장이 없네? 괜찮아?
+                                        </p>
+                                    </div>
+                                    <div class="self-start max-w-[85%] bg-white border border-zinc-100 rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm mb-0.5">
+                                        <p class="text-[14px] text-zinc-700 leading-snug break-keep-all">
+                                            무슨 일 있는 거 아니지?
+                                        </p>
+                                    </div>
+                                    <div class="self-start max-w-[85%] bg-white border border-zinc-100 rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm mb-0.5">
+                                        <p class="text-[14px] text-zinc-700 leading-snug break-keep-all">
+                                            언제든 불안하면 패닉링 눌러줘! <br>
+                                        </p>
+                                    </div>
+                            </div>
+                                                    <!-- 감정 기록 섹션 전체 컨테이너 -->
+                                                        <!-- 1. 도착 완료 알림 말풍선 -->
+                                                        <div class="self-start max-w-[90%] bg-white border border-zinc-100 rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm">
+                                                            <div class="flex items-center gap-2 mb-2">
+                                                                <div class="w-6 h-6 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center">
+                                                                    <iconify-icon icon="solar:home-smile-bold" class="text-xs text-blue-500"></iconify-icon>
+                                                                </div>
+                                                                <span class="text-[14px] font-semibold text-zinc-900">도착 완료!</span>
+                                                            </div>
+                                                            <p class="text-[14px] text-zinc-600 leading-snug break-keep-all">
+                                                                무사히 도착해서 다행이야! <br>
+                                                                오늘 집 오는 길은 어땠어? 네 기분을 기록해줘.
+                                                            </p>
+                                                        </div>
+                                                    
+                                                        <!-- 2. 감정 선택 카드 (가로 나열) -->
+                                                        <div class="grid grid-cols-3 gap-2 px-1">
+                                                            <!-- 안심됨 -->
+                                                            <button class="flex flex-col items-center gap-2 p-3 bg-green-50 border border-green-100 rounded-2xl hover:bg-green-100 transition-colors group">
+                                                                <div class="text-2xl group-hover:scale-110 transition-transform">😊</div>
+                                                                <span class="text-[12px] font-bold text-green-700">안심돼요</span>
+                                                            </button>
+                                                            
+                                                            <!-- 조금 불안함 -->
+                                                            <button class="flex flex-col items-center gap-2 p-3 bg-orange-50 border border-orange-100 rounded-2xl hover:bg-orange-100 transition-colors group">
+                                                                <div class="text-2xl group-hover:scale-110 transition-transform">🤨</div>
+                                                                <span class="text-[12px] font-bold text-orange-700">약간 불안</span>
+                                                            </button>
+                                                            
+                                                            <!-- 무서웠음 -->
+                                                            <button class="flex flex-col items-center gap-2 p-3 bg-red-50 border border-red-100 rounded-2xl hover:bg-red-100 transition-colors group">
+                                                                <div class="text-2xl group-hover:scale-110 transition-transform">😨</div>
+                                                                <span class="text-[12px] font-bold text-red-700">무서웠어</span>
+                                                            </button>
+                                                        </div>
+                                                    
+                                                        <!-- 3. 상세 기록 입력창 (선택 사항) -->
+                                                        <div class="relative w-full">
+                                                            <textarea 
+                                                                rows="2" 
+                                                                placeholder="기억하고 싶은 순간이나 장소가 있어?" 
+                                                                class="w-full p-4 bg-zinc-50 border border-zinc-200 rounded-2xl text-[13px] focus:outline-none focus:border-brand-500 transition-colors resize-none placeholder:text-zinc-400"
+                                                            ></textarea>
+                                                            <button class="absolute bottom-3 right-3 w-8 h-8 bg-brand-600 rounded-full flex items-center justify-center text-white shadow-md hover:bg-brand-700">
+                                                                <iconify-icon icon="solar:pen-new-square-bold" class="text-lg"></iconify-icon>
+                                                            </button>
+                                                        </div>
+                                                    
+                                                        <!-- 4. 하단 안내 텍스트 -->
+                                                        <p class="text-[11px] text-zinc-400 text-center leading-tight">
+                                                            기록된 감정은 나중에 '안전 리포트'로 확인할 수 있어. <br>
+                                                            더 안전한 내일의 퇴근길을 위해 소중히 보관할게!
+                                                        </p>
+
+
                                     
                                 </div>
                             </div>
