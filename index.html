@@ -192,24 +192,7 @@
 
                 
                 <!-- Visual Mockup (Light Mode Double Bezel) -->
-                <div class="lg:col-span-4 relative reveal">
-
-<style>
-    /* 모바일에서는 평범하게 보이다가, 768px(md) 이상 화면에서만 애니메이션 작동 */
-@media (min-width: 768px) {
-  .reveal {
-    /* 기존에 작성해 두었던 reveal 관련 애니메이션/효과 코드들 */
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease-out;
-  }
-  
-  .reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
+                <div class="lg:col-span-4 relative">
                     
                     <!-- 코워카 빼꼼 -->
             <!--
@@ -1240,19 +1223,20 @@
     </div>
 </div>
                             <!-- Alert Banner -->
-                            <div class="relative inset-0 z-10 flex flex-col">
                                 <div class="max-w-[85%] bg-red-500 rounded-xl p-3 flex items-start gap-3 mb-2 shadow-[0_0_20px_rgba(239,68,68,0.3)] mx-1">
                                     <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">
                                          <iconify-icon icon="solar:check-circle-bold" class="text-white text-xl"></iconify-icon>
                                     </div>
                                     <div class="flex-1">
                                         <p class="text-white text-[13px] font-bold leading-tight">자동 증거 리포트 전송 완료</p>
+                                        <!--
                                         <p class="text-red-100 text-[11px] mt-0.5">
                                             보호자에게 당신의 패닉 리포트가<br>
-                                            자동으로 전송되었습니다.</p>
+                                            자동으로 전송되었습니다.
+                                        </p>
+                                        -->
                                     </div>
                                 </div>
-                            </div>
 
                         </div>
                         <p class="text-zinc-800 text-sm leading-relaxed font-medium">
